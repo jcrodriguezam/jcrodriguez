@@ -1,0 +1,80 @@
+// Section1
+.display {
+
+}
+.display {
+    animation-name: rightslide;
+    animation-duration: 0.8s;
+    padding: 14px;
+    border: 1px solid;
+    background: linear-gradient(169.44deg, rgba(58, 129, 191, 0.08) 1.85%, rgba(65, 48, 90, 0.08) 98.72%);
+    border-radius: 35px;
+    max-height: 450px;
+    // max-width: 50%;
+    overflow: hidden;
+    width: 50%;
+    // background-color: #ffffff73;
+    transform: skewX(-35deg);
+    transform-origin: 0 0
+    &-nft {
+      object-fit: cover;
+      flex-shrink: 0;
+      width: 300px;
+      height: 300px;
+      border-radius: 20px;
+    }
+
+    .imgStyle {
+      object-fit: contain;
+    }
+    
+    .infowrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    
+    .info {
+      display: flex;
+      align-items: center;
+      font-family: 'Poppins';
+      font-style: normal;
+      color: #FFFFFF;
+      font-weight: 600;
+      font-size: 12px;
+      p {
+        margin: 0;
+      }
+      &-img {
+        object-fit: cover;
+        flex-shrink: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+    .info2 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-family: 'Poppins';
+      color: #FFFFFF;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      p {
+        margin: 0;
+      }
+      .iconwrapper {
+        display: flex;
+        align-items: center;
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  

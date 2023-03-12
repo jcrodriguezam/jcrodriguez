@@ -1,0 +1,87 @@
+.dock {
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    .dock-container {
+        display: flex;
+        align-items: center;
+        border-radius: 16px;
+        background: rgba(83, 83, 83, 0.25);
+        backdrop-filter: blur(13px);
+        -webkit-backdrop-filter: blur(13px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        justify-content: space-between;
+        padding: 1.5em;
+        width: 100%;
+            .hamburgerlogowrap {
+            display: flex;
+            align-items: center;
+            }
+            .hamburger {
+            display: none;
+            color: #D7D7D7;
+            background-color: #1F1D2B;
+            border: none;
+            margin-right: 10px;
+            }
+            .navlinkwrap {
+                display: flex;
+                align-items: center;
+                padding: 0 6em;
+            }
+            .createbtn {
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            width: 126px;
+            height: 45px;
+            color: #BCBCBC;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            &.selectedbtn {
+                border: 1px solid #D7D7D7;
+                border-radius: 10px;
+            }
+            }
+            .navlogo {
+            background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: 'Poppins';
+            font-style: italic;
+            font-weight: 700;
+            font-size: 2em;
+            }
+            .navlink {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.1em;
+            color: #BCBCBC;
+            cursor: pointer;
+            &.selectedlink {
+                background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                border-bottom: 1.5px solid #9B51E0;
+            }
+            &:not(:last-child) {
+                margin-right: 2.5em;
+            }
+            }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .dock {
+        width: 90%;
+    }
+   }

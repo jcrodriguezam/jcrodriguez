@@ -1,6 +1,6 @@
 @import 'header.scss';
 @import 'section1.scss';
-@import 'section01.scss';
+// @import 'section01.scss';
 
 body {
     margin: 0;
@@ -20,6 +20,7 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
     background-color: #1F1D2B;
+    min-height: 100vh;
     &::before {
       content: "";
       position: absolute;

@@ -16,10 +16,10 @@ export default function Index({ posts, globalData }) {
   return (
     <Layout>
       <SEO title={globalData.name} description={globalData.blogTitle} />
-      <Header />
-      <Section01 />
-      {/* <div class="landingpage">
-        <Section1 />
+      {/* <Section01 /> */}
+      <div class="landingpage">
+        <Header />
+        {/* <Section1 />
         <div class="auction">
           <div class="title">
             <p class="titlebold">Hot auctions</p>
@@ -90,8 +90,8 @@ export default function Index({ posts, globalData }) {
         <div class="footer2">
           <div></div>
           <p>Copyright 2021 Gaslur</p>
-        </div>
-      </div> */}
+  </div> */}
+      </div>  
     </Layout>
   );
 }
